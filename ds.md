@@ -63,7 +63,7 @@
 
 介绍:分布式系统电子书籍.涵盖内容：分布式系统介绍、全序和偏序、时钟、复制模型.适合分布式系统入门的同学。国内也有一些[笔记](https://blog.csdn.net/u012618715/article/details/76652831)
 
-* [《Distributed Systems Spring 2015》](http://www.andrew.cmu.edu/course/95-702/)
+* [《95-702 — Distributed Systems for Information Systems Management》](http://www.andrew.cmu.edu/course/95-702/)
 
 介绍:卡内基梅隆大学春季分布式课程主页
 
@@ -966,3 +966,44 @@ STACK为了使可扩展性更高，在计算Δ = ∀e:Reach(e) → ¬Undef(e)的
 - [《Performance Debugging for Distributed Systems of Black Boxes》](https://pdos.csail.mit.edu/~athicha/papers/blackboxes:sosp03.pdf)
 
 介绍：对分布式系统的性能Debug非常困难，因为里面的问题很多都是非确定性的，而且无法重现。只能通过对log的挖掘，找出配对的调用/消息以定位问题。黑盒方案假定需要跟踪的除了上述信息之外没有额外的信息，这样使用统计回归技术来推断两者之间的关系.与之相对应的Google使用标注方案解决Debug问题，具体参考[Dapper](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36356.pdf)
+
+- [《The Five-Minute Rule Ten Years Later, and Other Computer Storage Rules of Thumb》](http://jimgray.azurewebsites.net/5_min_rule_sigmod.pdf)
+
+介绍： 五分钟法则,此文与十年前的原始论文解释了一个量化公式，用来计算数据页是否应该缓存在内存中。能读到Jim Gray处理一系列相关问题（比如数据页应该多大）的方法，幸何如之。
+
+* [《CS-739: Distributed Systems》](http://pages.cs.wisc.edu/~remzi/Classes/739/Fall2018/)
+
+介绍:威斯康星大学分布式系统课程，主要以阅读为主：网络（TCP、RPC、U-net、Thrift、虚拟网络），系统失效、分布式时钟、一致性、资源隔离与分配、安全、负载均衡、集群调度、文件系统、案例学习.
+
+* [《Readings in Stream Processing》](https://github.com/xerial/streamdb-readings)
+
+介绍: 流处理相关论文阅读列表。可以深入理解消息队列
+
+* [《paper notebook of distributed system》](https://github.com/dyweb/papers-notebook)
+
+介绍: 分布式系统领域论文笔记。里面推荐了很多相关论文，譬如：调度器(Scheduler)、存储(Storage)、一致性算法、图计算、虚拟化、沙箱、安全、网络.现在这个列表转移到了[issue](https://github.com/dyweb/papers-notebook/issues)
+
+* [《Distributed tracing》](https://gianarb.it/blog/faq-distributed-tracing)
+
+介绍: 分布式系统跟踪，解释了为什么需要、跟踪什么、如何处理众多信息.
+
+* [《Dapr：Distributed Application Runtime》](https://github.com/dapr/dapr)
+
+介绍: 微软发布分布式应用程序运行时(Dapr)，这是一个开源项目，使每个开发人员更容易地构建微服务应用程序
+
+* [《Waltz: A Distributed Write-Ahead Log》](https://wecode.wepay.com/posts/waltz-a-distributed-write-ahead-log)
+
+介绍: 分布式预写日志
+
+* [《Reading List – Designing a Practical Distributed System》](https://devpoga.org/distributed_system/)
+
+介绍: 设计实用的分布式系统阅读清单
+
+* [《A Generalised Solution to Distributed Consensus》](https://arxiv.org/abs/1902.06776)
+
+介绍: 分布式共识问题一直以来是大规模系统的一个难题，本文讨论了一些分布式共识的通用解决方案。[详细介绍](https://blog.acolyer.org/2019/03/08/a-generalised-solution-to-distributed-consensus/)
+
+* [《Paxos vs Raft: Have we reached consensus on distributed consensus?》](https://arxiv.org/abs/2004.05074)
+
+介绍: 这篇论文对比分布式共识算法Paxos和Raft。讨论了为什么对于诞生的2014年诞生的Raft算法如此受业界亲睐。使用Raft的理论来解释Paxos算法，通过类比的方式发现，两者在大体上是相类似的。不同点在于Leader选举。论文得出的结论是：Raft比Paxos更易用是因为论文解释的比较清楚。
+
